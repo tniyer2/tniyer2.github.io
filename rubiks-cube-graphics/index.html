@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rubik's Cube</title>
+
+        <!-- Load utilities and functions -->
+        <script src="common/utilities.js"></script>
+        <script src="common/gl-matrix.js"></script>
+
+        <!-- Load the code for this example -->
+        <script type="module" src="type.js"></script>
+        <script type="module" src="utils.js"></script>
+        <script type="module" src="linearAlgebraUtils.js"></script>
+        <script type="module" src="tools.js"></script>
+        <script type="module" src="sceneTree.js"></script>
+        <script type="module" src="models.js"></script>
+        <script type="module" src="input.js"></script>
+        <script type="module" src="main.js"></script>
+
+        <!-- Style the canvas -->
+        <style type="text/css">
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+            canvas {
+                position: absolute;
+                top: 0; bottom: 0; left: 0; right: 0;
+                margin: auto;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Define the canvas to use for the WebGL example -->
+        <div>
+            <canvas id="webgl-canvas" width="400" height="400">
+                Your browser doesn't support the HTML5 canvas element.
+            </canvas>
+            <div id="info" class="left" style="position: absolute; bottom: 0px; right: 0px;">
+                <div>option + drag = snap rotation</div>
+                <div>shift + drag = lock axis of rotation</div>
+                <div>cmd + drag = rotate cube on Z-axis</div>
+                <div>The following keys rotates</div>
+                <div>a side counter clockwise:</div>
+                <div>g = green</div>
+                <div>x = middle x</div>
+                <div>b = blue</div>
+                <div>r = red</div>
+                <div>z = middle z</div>
+                <div>o = orange</div>
+                <div>u = white</div>
+                <div>y = middle y</div>
+                <div>d = yellow</div>
+                <div>key + shift = rotates clockwise</div>
+            </div>
+        </div>
+        <div id=controls>
+            <table>
+                <button id="shuffle" type="button">Shuffle</button>
+                <tr><td>Difficulty</td><td colspan=2><select id="difficulty">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select></td></tr>
+            </table>
+        </div>
+    </body>
+</html>

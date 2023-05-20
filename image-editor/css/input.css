@@ -1,0 +1,323 @@
+.noshow {
+  display: none !important;
+}
+
+.color-box__hex, .color-picker .close, .color-picker .hex-input, .message-box .text, .dropdown option, .dropdown .text, .text-input .text, .floating-list li, .file-input .text, .slider__text, .toggle .toggle__text {
+  font: 300 16px arial, sans-serif;
+  color: black;
+}
+
+.list-input svg, .floating-list ul {
+  width: 100%;
+  height: 100%;
+}
+
+.file-input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.color-picker .close, .list-input .add-btn, .list-input .remove-btn {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.text-input input {
+  padding: 0;
+  margin: none;
+  border: none;
+  outline: none;
+}
+
+.list-input, .floating-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown select {
+  border: none;
+  outline: none;
+}
+
+.toggle {
+  user-select: none;
+  font-size: 16px;
+}
+.toggle label {
+  display: inline-block;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle .toggle__slider {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ccc;
+}
+.toggle .toggle__slider:before {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translate(0, -50%);
+  width: 14px;
+  height: 14px;
+  content: "";
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.2s;
+}
+.toggle .toggle__slider.checked {
+  background: #4286F4;
+}
+.toggle .toggle__slider.checked:before {
+  transform: translate(18.5px, -50%);
+}
+.toggle .toggle__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: inherit;
+}
+
+.slider {
+  display: inline-block;
+}
+
+.slider input {
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 8px;
+  margin: 0;
+  background: #ccc;
+  border-radius: 2.9090909091px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #444;
+  border-radius: 50%;
+}
+
+.slider__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.file-input {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 10px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #444;
+}
+.file-input input {
+  width: 0;
+  height: 0;
+}
+.file-input .text {
+  vertical-align: middle;
+  margin: 0;
+}
+
+.file-input:hover .text {
+  color: #4286F4;
+}
+
+.floating-list {
+  position: absolute;
+  overflow: hidden;
+  min-width: 100px;
+  max-height: 200px;
+  background-color: #555;
+  border: 1px solid #333;
+  border-bottom-width: 0;
+}
+.floating-list li {
+  padding: 2px;
+  border: 0 solid #333;
+  border-bottom-width: 1px;
+}
+
+.list-input {
+  display: flex;
+  flex-direction: column;
+}
+.list-input .item-space {
+  display: inline-block;
+}
+.list-input .remove-btn-parent {
+  display: inline-block;
+  margin: 0 10px;
+  width: 30px;
+}
+.list-input .remove-btn {
+  width: 20px;
+  height: 20px;
+}
+.list-input .add-btn {
+  width: 20px;
+  height: 20px;
+}
+.list-input svg {
+  fill: black;
+}
+.list-input svg:hover {
+  fill: #4286F4;
+}
+
+.text-input {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+}
+.text-input .text {
+  vertical-align: bottom;
+  margin: 0;
+  margin-right: 5px;
+  font-size: inherit;
+}
+.text-input input {
+  font-size: inherit;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 0 2px;
+  width: 150px;
+  height: 1em;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.text-input.inverse {
+  flex-direction: row-reverse;
+}
+.text-input.inverse .text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+}
+.dropdown .text {
+  vertical-align: bottom;
+  margin: 0;
+  margin-right: 5px;
+  font-size: inherit;
+}
+.dropdown select {
+  display: inline;
+  vertical-align: top;
+  font-size: inherit;
+  width: 150px;
+  height: 1em;
+  border-radius: 2px;
+}
+.dropdown.inverse {
+  flex-direction: row-reverse;
+}
+.dropdown.inverse .text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.message-box {
+  border: 0.5px solid #444;
+  background-color: #888;
+  height: 20px;
+  padding: 0 5px;
+}
+.message-box svg {
+  display: inline;
+  vertical-align: middle;
+  height: 18px;
+  width: 18px;
+  margin-right: 3px;
+  fill: red;
+}
+.message-box .text {
+  display: inline;
+  vertical-align: middle;
+}
+
+.message-box.error {
+  border-color: red;
+}
+.message-box.error .text {
+  color: red;
+}
+
+.color-picker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background: #666;
+}
+.color-picker * {
+  vertical-align: middle;
+  height: 20px;
+}
+.color-picker .hex-input {
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 2px;
+}
+.color-picker .close {
+  width: 20px;
+  margin: 0;
+  background: #aaa;
+  border-radius: 25%;
+  user-select: none;
+  font-size: 20px;
+  text-align: center;
+}
+.color-picker .alpha-slider {
+  margin-top: 5px;
+}
+
+.color-box {
+  position: relative;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+}
+
+.color-box__hex {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 5px;
+  transform: translateY(-100%);
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=input.css.map */

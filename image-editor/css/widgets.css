@@ -1,0 +1,83 @@
+.noshow {
+  display: none !important;
+}
+
+.move-box__background {
+  width: 100%;
+  height: 100%;
+}
+
+.move-box {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.move-box__background {
+  position: absolute;
+  top: -3.5px;
+  left: -3.5px;
+  z-index: 1;
+  border: 3.5px solid #4286F4;
+}
+
+.move-box__resize-handle {
+  position: absolute;
+  z-index: 3;
+  width: 17.5px;
+  height: 17.5px;
+  background: #1c59bc;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.move-box__resize-handle.tl {
+  top: 0;
+  left: 0;
+  transform: translate(calc(-50% - 1 * 1.75px), calc(-50% - 1 * 1.75px));
+}
+
+.move-box__resize-handle.tr {
+  top: 0;
+  left: 100%;
+  transform: translate(calc(-50% - -1 * 1.75px), calc(-50% - 1 * 1.75px));
+}
+
+.move-box__resize-handle.br {
+  top: 100%;
+  left: 100%;
+  transform: translate(calc(-50% - -1 * 1.75px), calc(-50% - -1 * 1.75px));
+}
+
+.move-box__resize-handle.bl {
+  top: 100%;
+  left: 0;
+  transform: translate(calc(-50% - 1 * 1.75px), calc(-50% - -1 * 1.75px));
+}
+
+.move-box__rotate-handle {
+  position: absolute;
+  z-index: 3;
+  top: -40px;
+  left: 50%;
+  transform: translate(calc(-50% - 0 * 1.75px), calc(-50% - 1 * 1.75px));
+  width: 17.5px;
+  height: 17.5px;
+  background: #1c59bc;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.move-box__rotate-connector {
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 50%;
+  transform: translate(calc(-50% - 0 * 1.75px), calc(-50% - 1 * 1.75px));
+  width: 4.5px;
+  height: 40px;
+  background: #4286F4;
+}
+
+/*# sourceMappingURL=widgets.css.map */

@@ -1,0 +1,162 @@
+.noshow {
+  display: none !important;
+}
+
+.area .tab .text, .menubar__save-image span {
+  font: 300 16px arial, sans-serif;
+  color: black;
+}
+
+.tab-wrapper, .area .add-tab button svg, .area .add-tab button, .menubar__undo-btn svg, .editor, .root, body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.area .tab .remove-btn, .area .add-tab button, .menubar__undo-btn, .menubar__save-image {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+html {
+  position: fixed;
+  background-color: gray;
+}
+
+body {
+  margin: 0;
+}
+
+.root {
+  border-radius: 5px;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.menubar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px 10px;
+  background-color: #888;
+  border: 3px solid #444;
+}
+
+.menubar__save-image {
+  padding: 0 5px;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #444;
+}
+.menubar__save-image span {
+  margin: auto;
+}
+
+.menubar__undo-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menubar__undo-btn:hover svg {
+  fill: #1c59bc;
+}
+
+.menubar__undo-btn:disabled svg {
+  fill: #444;
+}
+
+.editor-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.area-wrapper {
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  border: 1px solid #333;
+}
+
+.area-wrapper.columns {
+  flex-direction: column;
+}
+
+.area {
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+}
+.area .tab-bar {
+  flex: 0 0 auto;
+  height: 50px;
+  background-color: #888;
+}
+.area .tab-bar-top {
+  height: 50%;
+}
+.area .tabs {
+  display: inline-flex;
+  height: 100%;
+  vertical-align: top;
+}
+.area .tab-bar-bottom {
+  height: 50%;
+  background-color: #333;
+}
+.area .add-tab {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 100%;
+  background-color: #333;
+}
+.area .add-tab button:hover svg {
+  fill: #1c59bc;
+}
+.area .tab-menu {
+  top: 50%;
+  left: 50%;
+}
+.area .tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 5px;
+  padding-left: 2px;
+  width: 120px;
+  height: 100%;
+}
+.area .tab .remove-btn {
+  font-size: 25px;
+}
+.area .tab .remove-btn:hover {
+  color: #4286F4;
+}
+.area .tab.active {
+  background-color: #333;
+}
+.area .tab-parent {
+  position: relative;
+  flex: 1 1 0;
+}
+
+.tab-wrapper {
+  position: relative;
+}
+
+/*# sourceMappingURL=editor.css.map */
